@@ -24,7 +24,7 @@ export function InputComponent({sendNewTask}) {
     return(<>
     <div className="flex space-x-2 items-center px-1">
     <FontAwesomeIcon icon={faPlus} />
-    <div className="w-full"><input type="text" ref={inputRef} className="bg-blue-100 border-none w-full focus:outline-none" placeholder="start typing here" value={taskTitle}
+    <div className="w-full"><input type="text" ref={inputRef} className=" border-none w-full focus:outline-none" placeholder="Add New Task..." value={taskTitle}
     onChange={(e)=> setTaskTitle(e.target.value)}></input>
 </div>
     </div>

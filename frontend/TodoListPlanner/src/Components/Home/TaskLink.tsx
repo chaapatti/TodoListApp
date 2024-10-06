@@ -44,7 +44,7 @@ const handleSubmit = () => {
 }
     return(<>
     
-    <div className="text-center p-2 border-b text-gray-500 font-semibold hover:bg-gray-300 hover:text-white rounded " 
+    <div className="text-center p-2 border-b-2 text-gray-500 font-semibold hover:bg-gray-300 hover:text-white rounded " 
     onClick={handleSubmit}>
         <div className="flex justify-between items-center">
             <div >
@@ -53,18 +53,17 @@ const handleSubmit = () => {
             <input className="appearance-none border accent-pink-100 w-3 h-3 border-gray-300 rounded text-blue-100" type="checkbox" id={id}></input>
             <FontAwesomeIcon className={`absolute text-gray-600 left-0 top-0 text-2xl h-4 w-4 text-opacity-0 transition ${a? "text-opacity-100" :"text-opacity-0"} `} icon={faCheck}/>
             </label>
-            <span className="text-center text-xs px-2">{title}</span>
+            <span className="text-center px-2">{title}</span>
             </div>
             <div className="">
 
             <FontAwesomeIcon icon={faChevronRight} />
             </div>
             </div>
-            <div className="flex justify-center text-xs font-normal "> 
-                these ar the conditional components on render when there is something to print. if duedate assigned then only render them. otherwise skip.
-                <div className="p-5">Due Date</div>
-                <div className="p-5">List</div>
-                <div className="p-5">SubTask</div>
+            <div className="flex text-xs font-normal "> 
+                <div className="px-5">Due Date</div>
+                <div className="px-5">List</div>
+                <div className="px-5">SubTask</div>
             </div>
     </div>
     
