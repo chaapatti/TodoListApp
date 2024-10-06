@@ -60,6 +60,12 @@ const handleSubmit = () => {
             <FontAwesomeIcon icon={faChevronRight} />
             </div>
             </div>
+            <div className="flex justify-center text-xs font-normal "> 
+                these ar the conditional components on render when there is something to print. if duedate assigned then only render them. otherwise skip.
+                <div className="p-5">Due Date</div>
+                <div className="p-5">List</div>
+                <div className="p-5">SubTask</div>
+            </div>
     </div>
     
     
