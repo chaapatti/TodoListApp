@@ -4,7 +4,8 @@ import { TaskLink } from "./TaskLink";
 import todoList from "../../List.json"
 import { createContext } from "react";
 import { InputComponent } from "../Extras/InputComponent";
-
+// We have to do everything locally because we don't have the database setup yet but in future we can change this and make pull 
+// request from the database.
 const listClassification = ["Personal", "Work", "list1"]
 export const listContextData = createContext(listClassification);
 var IDUPDATE = 5;
@@ -35,6 +36,7 @@ export function PageLayout() {
         <div>
             Some Conditional rendering based on the page.
         </div>
+        <div><InputComponent sendNewTask={appendTodoList} /></div>
         <input type="submit" value="Click me to open Task" onClick={handleTask}></input>
         {mytodoList.map((task)=> {
             return(<TaskLink key= {task.id}  id={task.id} title= {task.title} clickParam={handleTaskData} openTask={setTaskShow} desc={task.description} status={task.Completed}/>)
