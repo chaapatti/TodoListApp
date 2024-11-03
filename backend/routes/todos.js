@@ -16,4 +16,22 @@ router.get("/alltodos",SigninCheck, (req, res) => {
     }
     
 })
+
+router.post("/task", SigninCheck, (req, res) => {
+
+})
+
+router.post("/:id/subtask", SigninCheck, (req, res) => {
+    // based on the id we create a subtask for todo task.
+})
+
+router.post("/list",SigninCheck, (req, res) => {
+    // created new list for the user.
+})
+
+router.put("/task/:id", (req, res) => {
+    // update a todo task information.
+})
+
+
 module.exports = router
