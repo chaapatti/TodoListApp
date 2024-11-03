@@ -27,6 +27,9 @@ const userSchema = mongoose.Schema({
         trim: true,
         maxlength: 50
     },
+    List: [{
+        type: String,
+    }],
     todos: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Todo"
